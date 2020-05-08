@@ -56,7 +56,7 @@
                                     <li><a href="AddGaurd.aspx">Add Guard</a></li>
                                     <li><a href="AddProduct.aspx">Update Gaurd Information</a></li>
                                     <li><a href="AddProduct.aspx">Assign Duty to Gaurd</a></li>
-                                    <li><a href="AddProduct.aspx">Delete a Gaurd</a></li>
+                                    <li><a href="DeleteGaurd.aspx">Delete a Gaurd</a></li>
                                     <li><a href="AddProduct.aspx">View All Gaurds</a></li>
                                 </ul>
                             </li>

@@ -35,7 +35,7 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
                             <li class="active"><a href="SignUp.aspx">Sign Up</a></li>
-                            <li><a href="Login.aspx">Sign In</a></li>
+                            <li><a href="SignIn.aspx">Sign In</a></li>
                         </ul>
                     </div>
                 </div>
@@ -60,9 +60,9 @@
                 <asp:TextBox ID="tbCPass" runat="server" Class="form-control" placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
             </div>
 
-            <label class="col-xs-11">ID Card Number</label>
+            <label class="col-xs-11">CNIC</label>
             <div class="col-xs-11">
-                <asp:TextBox ID="txt_Name" runat="server" Class="form-control" placeholder="Name"></asp:TextBox>
+                <asp:TextBox ID="txt_Name" runat="server" Class="form-control" placeholder="CNIC"></asp:TextBox>
             </div>
 
             <label class="col-xs-11">Email</label>
@@ -94,7 +94,7 @@
         <footer class="footer-pos">
             <div class="container">
                 <p class="pull-right"><a href="#">Back to top</a></p>
-                <p>&copy; 2020 AbdulWahab &middot; <a href="HomePage.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="Login.aspx">SignIn</a>&middot; <a href="SignUp.aspx">SignUp</a></p>
+                <p>&copy; 2020 AbdulWahab &middot; <a href="HomePage.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="SignIn.aspx">SignIn</a>&middot; <a href="SignUp.aspx">SignUp</a></p>
             </div>
         </footer>
 

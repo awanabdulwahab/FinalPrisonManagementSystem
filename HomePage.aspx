@@ -35,7 +35,7 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
                             <li id="btnSignup" runat="server"><a href="SignUp.aspx">Sign Up</a></li>
-                            <li id="btnSignin" runat="server"><a href="Login.aspx">Sign In</a></li>
+                            <li id="btnSignin" runat="server"><a href="SignIn.aspx">Sign In</a></li>
                         </ul>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
         <footer>
             <div class="container">
                 <p class="pull-right"><a href="#">Back to top</a></p>
-                <p>&copy; 2020 AbdulWahab &middot; <a href="HomePage.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="Login.aspx">SignIn</a>&middot; <a href="SignUp.aspx">SignUp</a></p>
+                <p>&copy; 2020 AbdulWahab &middot; <a href="HomePage.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="SignIn.aspx">SignIn</a>&middot; <a href="SignUp.aspx">SignUp</a></p>
             </div>
         </footer>
 

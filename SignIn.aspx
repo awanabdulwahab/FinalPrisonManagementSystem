@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="PrisonManagementSystem.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignIn.aspx.cs" Inherits="PrisonManagementSystem.Login" %>
 
 <!DOCTYPE html>
 
@@ -51,14 +51,14 @@
                     <asp:Label ID="Label1" runat="server" CssClass="col-md-2 control-label" Text="Username"></asp:Label>
                     <div class="col-md-3">
                         <asp:TextBox ID="txt_Username" CssClass="form-control" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorUsername" CssClass="text-danger" runat="server" ErrorMessage="The Username field is Required !" ControlToValidate="UserName"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorUsername" CssClass="text-danger" runat="server" ErrorMessage="The Username field is Required !" ControlToValidate="txt_Username"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="form-group">
                     <asp:Label ID="Label2" runat="server" CssClass="col-md-2 control-label" Text="Password"></asp:Label>
                     <div class="col-md-3">
                         <asp:TextBox ID="txt_Password" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorPass" CssClass="text-danger" runat="server" ErrorMessage="The Password field is Required !" ControlToValidate="Password"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorPass" CssClass="text-danger" runat="server" ErrorMessage="The Password field is Required !" ControlToValidate="txt_Password"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="form-group">
@@ -100,7 +100,7 @@
     <footer>
         <div class="container">
             <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2020 AbdulWahab &middot; <a href="HomePage.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="Login.aspx">SignIn</a>&middot; <a href="SignUp.aspx">SignUp</a></p>
+            <p>&copy; 2020 AbdulWahab &middot; <a href="HomePage.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="SignIn.aspx">SignIn</a>&middot; <a href="SignUp.aspx">SignUp</a></p>
         </div>
     </footer>
 

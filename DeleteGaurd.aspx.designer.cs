@@ -24,13 +24,13 @@ namespace PrisonManagementSystem
         protected global::System.Web.UI.WebControls.Label lblEmail;
 
         /// <summary>
-        /// tx_Email control.
+        /// txt_Email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tx_Email;
+        protected global::System.Web.UI.WebControls.TextBox txt_Email;
 
         /// <summary>
         /// RequiredFieldValidatorEmail control.
