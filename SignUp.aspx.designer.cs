@@ -60,13 +60,13 @@ namespace PrisonManagementSystem
         protected global::System.Web.UI.WebControls.TextBox tbCPass;
 
         /// <summary>
-        /// txt_Name control.
+        /// txt_CNIC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Name;
+        protected global::System.Web.UI.WebControls.TextBox txt_CNIC;
 
         /// <summary>
         /// txt_email control.

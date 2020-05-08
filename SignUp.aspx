@@ -62,7 +62,7 @@
 
             <label class="col-xs-11">CNIC</label>
             <div class="col-xs-11">
-                <asp:TextBox ID="txt_Name" runat="server" Class="form-control" placeholder="CNIC"></asp:TextBox>
+                <asp:TextBox ID="txt_CNIC" runat="server" Class="form-control" placeholder="CNIC"></asp:TextBox>
             </div>
 
             <label class="col-xs-11">Email</label>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="col-xs-11 space-vert">
-                <asp:Button ID="btSignup" runat="server" Class="btn btn-success" Text="Sign Up" />
+                <asp:Button ID="btSignup" runat="server" Class="btn btn-success" Text="Sign Up" OnClick="btSignup_Click" />
                 <asp:Label ID="lblMsg" runat="server"></asp:Label>
             </div>
 
