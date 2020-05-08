@@ -55,7 +55,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <asp:Button ID="BtAdminLogout" runat="server" Class="btn btn-default navbar-btn" Text="Logout" />
+                                <asp:Button ID="btn_JailorLogout" runat="server" Class="btn btn-default navbar-btn" Text="Logout" />
                             </li>
 
                         </ul>

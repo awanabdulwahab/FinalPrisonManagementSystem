@@ -24,13 +24,13 @@ namespace PrisonManagementSystem
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// BtAdminLogout control.
+        /// btn_JailorLogout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtAdminLogout;
+        protected global::System.Web.UI.WebControls.Button btn_JailorLogout;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

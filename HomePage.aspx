@@ -82,20 +82,20 @@
         <div class="container center">
             <div class="row">
                 <div class="col-lg-4">
-                    <img class="img-circle" src="Images/Thumb01.jpeg" alt="thumb01" width="140" height="140" />
-                    <h2>Mobiles</h2>
+                    <img class="img-circle" src="Images/PrisonImage1.jpg" alt="thumb01" width="140" height="140" />
+                    <h2>Jailors</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu nunc eu felis mollis suscipit. Vivamus at turpis nisi. Nam a metus ac velit malesuada accumsan vel ut mauris. Proin eleifend orci tempor, faucibus felis sagittis, auctor ante. Fusce quis pellentesque metus, eu dictum est. Quisque finibus urna ac metus placerat, id porttitor ligula luctus. Nullam tincidunt, lorem at tincidunt dignissim, purus nunc tincidunt enim, vitae aliquam ante orci efficitur leo. Vivamus ac pretium libero. Quisque venenatis leo vel nibh pretium malesuada. Phasellus aliquam nunc vel e</p>
                     <p><a class="btn btn-default" href="#" role="button">View &raquo;</a></p>
                 </div>
                 <div class="col-lg-4">
-                    <img class="img-circle" src="Images/Thumb02.jpg" alt="thumb02" width="140" height="140" />
-                    <h2>Clothing</h2>
+                    <img class="img-circle" src="Images/PrisonImage2.jpg" alt="thumb02" width="140" height="140" />
+                    <h2>Gaurds</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu nunc eu felis mollis suscipit. Vivamus at turpis nisi. Nam a metus ac velit malesuada accumsan vel ut mauris. Proin eleifend orci tempor, faucibus felis sagittis, auctor ante. Fusce quis pellentesque metus, eu dictum est. Quisque finibus urna ac metus placerat, id porttitor ligula luctus. Nullam tincidunt, lorem at tincidunt dignissim, purus nunc tincidunt enim, vitae aliquam ante orci efficitur leo. Vivamus ac pretium libero. Quisque venenatis leo vel nibh pretium malesuada. Phasellus aliquam nunc vel e</p>
                     <p><a class="btn btn-default" href="#" role="button">View &raquo;</a></p>
                 </div>
                 <div class="col-lg-4">
-                    <img class="img-circle" src="Images/Thumb03.jpg" alt="thumb03" width="140" height="140" />
-                    <h2>Footwear</h2>
+                    <img class="img-circle" src="Images/PrisonImage3.jpg" alt="thumb03" width="140" height="140" />
+                    <h2>Prisoners</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu nunc eu felis mollis suscipit. Vivamus at turpis nisi. Nam a metus ac velit malesuada accumsan vel ut mauris. Proin eleifend orci tempor, faucibus felis sagittis, auctor ante. Fusce quis pellentesque metus, eu dictum est. Quisque finibus urna ac metus placerat, id porttitor ligula luctus. Nullam tincidunt, lorem at tincidunt dignissim, purus nunc tincidunt enim, vitae aliquam ante orci efficitur leo. Vivamus ac pretium libero. Quisque venenatis leo vel nibh pretium malesuada. Phasellus aliquam nunc vel e</p>
                     <p><a class="btn btn-default" href="#" role="button">View &raquo;</a></p>
                 </div>
