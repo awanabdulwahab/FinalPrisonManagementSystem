@@ -71,7 +71,7 @@
                 <div class="form-group">
                     <div class="col-md-2"></div>
                     <div class="col-md-6">
-                        <asp:Button ID="btn_Login" runat="server" Text="Login" CssClass="btn btn-default" />
+                        <asp:Button ID="btn_Login" runat="server" Text="Login" CssClass="btn btn-default" OnClick="btn_Login_Click" />
                         <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/SignUp.aspx">Sign Up</asp:LinkButton>
                     </div>
                 </div>
