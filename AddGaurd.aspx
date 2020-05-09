@@ -71,7 +71,7 @@
         <div class="panel panel-default">
             <!-- Default panel contents -->
             <div class="panel-heading">All Gaurds</div>
-            <asp:GridView ID="grid_Gaurd" runat="server" AutoGenerateColumns="False" DataKeyNames="gaurdID" DataSourceID="SqlDataSource2" CssClass="Grid">
+            <asp:GridView ID="grid_Gaurd" runat="server" AutoGenerateColumns="False" DataKeyNames="gaurdID" DataSourceID="SqlDataSource2" CssClass="Grid" CellPadding="1" Width="100%">
                 <Columns>
                     <asp:BoundField DataField="gaurdID" HeaderText="Gaurd ID" ReadOnly="True" SortExpression="gaurdID" />
                     <asp:BoundField DataField="gaurdFirstName" HeaderText="First Name" SortExpression="gaurdFirstName" />
