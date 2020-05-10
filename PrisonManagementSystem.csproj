@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="AddGaurd.aspx" />
     <Content Include="AddJailor.aspx" />
+    <Content Include="AddPrisoner.aspx" />
     <Content Include="AdminHomePage.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -108,6 +109,13 @@
     </Compile>
     <Compile Include="AddJailor.aspx.designer.cs">
       <DependentUpon>AddJailor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPrisoner.aspx.cs">
+      <DependentUpon>AddPrisoner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPrisoner.aspx.designer.cs">
+      <DependentUpon>AddPrisoner.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminHomePage.aspx.cs">
       <DependentUpon>AdminHomePage.aspx</DependentUpon>

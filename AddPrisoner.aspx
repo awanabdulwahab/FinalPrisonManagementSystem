@@ -1,14 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMasterPage.Master" AutoEventWireup="true" CodeBehind="AddJailor.aspx.cs" Inherits="PrisonManagementSystem.AddJailor" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMasterPage.Master" AutoEventWireup="true" CodeBehind="AddPrisoner.aspx.cs" Inherits="PrisonManagementSystem.AddPrisoner" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="container">
+    <div class="container">
         <div class="form-horizontal">
-            <h2>Add New Jailor</h2>
+            <h2>Add New Prisoner</h2>
             <hr />
             <div class="form-group">
-                <asp:Label ID="Label3" runat="server" CssClass="col-md-2 control-label" Text="Jailor ID "></asp:Label>
+                <asp:Label ID="Label3" runat="server" CssClass="col-md-2 control-label" Text="Prisoner ID "></asp:Label>
                 <div class="col-md-7">
-                    <asp:TextBox ID="txtJailorId" CssClass="form-control" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtJailorId"></asp:RequiredFieldValidator>
+                    <asp:TextBox ID="txtPrisonerId" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtPrisonerId"></asp:RequiredFieldValidator>
                 </div>
             </div>
             <div class="form-group">
@@ -26,10 +26,10 @@
                 </div>
             </div>
             <div class="form-group">
-                <asp:Label ID="Label4" runat="server" CssClass="col-md-2 control-label" Text="Email"></asp:Label>
+                <asp:Label ID="Label4" runat="server" CssClass="col-md-2 control-label" Text="Crime"></asp:Label>
                 <div class="col-md-7">
-                    <asp:TextBox ID="txtEmail" CssClass="form-control" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
+                    <asp:TextBox ID="txtCrime" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtCrime"></asp:RequiredFieldValidator>
                 </div>
             </div>
             <div class="form-group">
@@ -67,31 +67,33 @@
             <asp:Label ID="lblMsg" runat="server"></asp:Label>
         </div>
 
-        <h1>Jailors</h1>
+        <h1>Prisoner</h1>
         <hr />
-        <div class="panel panel-default">
+
+         <div class="panel panel-default">
             <!-- Default panel contents -->
-            <div class="panel-heading">All Jailors</div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="jailorID" DataSourceID="SqlDataSource1" BackColor="#FFFFCC" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" HorizontalAlign="Center" PageSize="5" Width="100%">
-                <Columns>
-                    <asp:BoundField DataField="jailorID" HeaderText="Jailor ID" ReadOnly="True" SortExpression="jailorID" />
-                    <asp:BoundField DataField="firstName" HeaderText="Name" SortExpression="firstName" />
-                    <asp:BoundField DataField="fathername" HeaderText="Father Name" SortExpression="fathername" />
-                    <asp:BoundField DataField="email" HeaderText="Email" SortExpression="email" />
-                    <asp:BoundField DataField="gender" HeaderText="Gender" SortExpression="gender" />
-                    <asp:BoundField DataField="address" HeaderText="Address" SortExpression="address" />
-                    <asp:BoundField DataField="age" HeaderText="Age" SortExpression="age" />
-                </Columns>
-                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-                <HeaderStyle BackColor="Black" BorderColor="White" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" HorizontalAlign="Center" VerticalAlign="Middle" />
-                <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
-                <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
-                <SortedAscendingCellStyle BackColor="#F7F7F7" />
-                <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
-                <SortedDescendingCellStyle BackColor="#E5E5E5" />
-                <SortedDescendingHeaderStyle BackColor="#242121" />
-            </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PrisonManagementSystemConnectionString %>" SelectCommand="SELECT * FROM [JailorTable]"></asp:SqlDataSource>
-        </div>
+            <div class="panel-heading">All Prisoners</div>
+
+         </div>
     </div>
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="PrisonerID" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Width="100%">
+        <Columns>
+            <asp:BoundField DataField="PrisonerID" HeaderText="Prisoner ID" ReadOnly="True" SortExpression="PrisonerID" />
+            <asp:BoundField DataField="firstName" HeaderText="First Name" SortExpression="firstName" />
+            <asp:BoundField DataField="fatherName" HeaderText="Father Name" SortExpression="fatherName" />
+            <asp:BoundField DataField="Crime" HeaderText="Crime" SortExpression="Crime" />
+            <asp:BoundField DataField="Gender" HeaderText="Gender" SortExpression="Gender" />
+            <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
+            <asp:BoundField DataField="Age" HeaderText="Age" SortExpression="Age" />
+        </Columns>
+        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+        <SortedDescendingHeaderStyle BackColor="#242121" />
+    </asp:GridView>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PrisonManagementSystemConnectionString %>" SelectCommand="SELECT * FROM [PrisonerTable]"></asp:SqlDataSource>
 </asp:Content>
