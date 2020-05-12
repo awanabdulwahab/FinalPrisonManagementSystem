@@ -77,6 +77,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\Custom-Cs.css" />
     <Content Include="DeleteGaurd.aspx" />
+    <Content Include="DeleteJailor.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="ForgetPassword.aspx" />
     <Content Include="GaurdHomePage.aspx" />
@@ -137,6 +138,13 @@
     </Compile>
     <Compile Include="DeleteGaurd.aspx.designer.cs">
       <DependentUpon>DeleteGaurd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteJailor.aspx.cs">
+      <DependentUpon>DeleteJailor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteJailor.aspx.designer.cs">
+      <DependentUpon>DeleteJailor.aspx</DependentUpon>
     </Compile>
     <Compile Include="ForgetPassword.aspx.cs">
       <DependentUpon>ForgetPassword.aspx</DependentUpon>
