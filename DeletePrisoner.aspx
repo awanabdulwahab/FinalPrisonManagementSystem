@@ -16,7 +16,7 @@
                     <div class="col-md-2"></div>
                     <div class="col-md-6">
                         <asp:Button ID="btn_delete" runat="server" CssClass="btn btn-default" Text="Delete" OnClick="btn_delete_Click" />
-                        <asp:Label ID="lblPassRec" runat="server"></asp:Label>
+                        <asp:Label ID="lblPassRec" runat="server" CssClass="text-danger"></asp:Label>
                     </div>
                 </div>
             </div>
@@ -47,4 +47,5 @@
         <SortedDescendingHeaderStyle BackColor="#242121" />
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PrisonManagementSystemConnectionString %>" SelectCommand="SELECT * FROM [PrisonerTable]"></asp:SqlDataSource>
+             </div>
 </asp:Content>

@@ -30,23 +30,7 @@
                             <li><a href="HomePage.aspx">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-header">Men</li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Shirts</a></li>
-                                    <li><a href="#">Pants</a></li>
-                                    <li><a href="#">Denims</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">Women</li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Top</a></li>
-                                    <li><a href="#">Leggings</a></li>
-                                    <li><a href="#">Denims</a></li>
-                                </ul>
-                            </li>
-                            
+                            <li><a href="SignUp.aspx">Sign up</a></li>
                             <li><a href="SignIn.aspx">Sign In</a></li>
                             
                         </ul>
@@ -59,19 +43,20 @@
             <div class="form-horizontal">
                 <h2>Recover Password</h2>
                 <hr />
-                <h4>Please enter your email address, We will send you the instrutions to reset your password.</h4>
+                <h4>Please enter your CNIC, We will send you the instrutions to reset your password.</h4>
                 <div class="form-group">
-                    <asp:Label ID="lblEmail" runat="server" CssClass="col-md-2 control-label" Text="Your Email"></asp:Label>
+                    <asp:Label ID="lblCNIC" runat="server" CssClass="col-md-2 control-label" Text="Your CNIC"></asp:Label>
                     <div class="col-md-3">
-                        <asp:TextBox ID="txt_Email" CssClass="form-control" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" CssClass="text-danger" runat="server" ErrorMessage="Please enter your email ID !" ControlToValidate="txt_Email"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_CNIC" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" CssClass="text-danger" runat="server" ErrorMessage="Please enter your CNIC !" ControlToValidate="txt_CNIC"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-md-2"></div>
                     <div class="col-md-6">
-                        <asp:Button ID="btPassRec" runat="server" CssClass="btn btn-default" Text="Send" />
-                        <asp:Label ID="lblPassRec" runat="server"></asp:Label>
+                        <asp:Button ID="btnSend" runat="server" CssClass="btn btn-default" Text="Send" OnClick="btPassRec_Click" /><br /><br />
+                        <asp:Label ID="Label1" runat="server" ></asp:Label>
+                        <asp:Label ID="lblPassRec" runat="server" CssClass ="text-danger"></asp:Label>
                     </div>
                 </div>
             </div>

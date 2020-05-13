@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace PrisonManagementSystem
 {
     public partial class AdminMasterPage : System.Web.UI.MasterPage
@@ -12,6 +13,13 @@ namespace PrisonManagementSystem
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btn_AdminLogout_Click(object sender, EventArgs e)
+        {
+            
+            Session.Clear();
+            Response.Redirect("SignIn.aspx");
         }
     }
 }
