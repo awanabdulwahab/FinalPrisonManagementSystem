@@ -71,6 +71,7 @@
     <Content Include="AddJailor.aspx" />
     <Content Include="AddPrisoner.aspx" />
     <Content Include="AdminHomePage.aspx" />
+    <Content Include="AssignJailToJailor.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -132,6 +133,13 @@
     </Compile>
     <Compile Include="AdminMasterPage.Master.designer.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AssignJailToJailor.aspx.cs">
+      <DependentUpon>AssignJailToJailor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignJailToJailor.aspx.designer.cs">
+      <DependentUpon>AssignJailToJailor.aspx</DependentUpon>
     </Compile>
     <Compile Include="DeleteGaurd.aspx.cs">
       <DependentUpon>DeleteGaurd.aspx</DependentUpon>
