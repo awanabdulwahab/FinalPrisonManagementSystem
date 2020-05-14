@@ -33,7 +33,7 @@ namespace PrisonManagementSystem
             cmd.Parameters.AddWithValue("@address", txtAddress.Text);
             cmd.Parameters.AddWithValue("@age", txt_age.Text);
             cmd.Parameters.AddWithValue("gender", RadioButtonList1.SelectedItem.Text);
-            SqlCommand cmd1 = new SqlCommand("select jailorID as jailorID from jailorTable where jailorID='" + txtJailorId.Text + "'", conn);
+            SqlCommand cmd1 = new SqlCommand("select jailorID as jailorID from JailorTable where jailorID='" + txtJailorId.Text + "'", conn);
             SqlDataReader dr;
             dr = cmd1.ExecuteReader();
             int count = 0;

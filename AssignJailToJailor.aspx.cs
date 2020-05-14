@@ -24,7 +24,15 @@ namespace PrisonManagementSystem
 
         protected void btn_Assign_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd1 = new SqlCommand("select jailorID as jailorID from JailorTable where jailorID='" + txt_id.Text + "'", conn);
+            string command = "INSERT INTO AssignJailor(jailorID,JoiningDate,JailName) VALUES(@jailorID,@JoiningDate,@JailName)";
+            SqlCommand cmd = new SqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("@jailorID", txt_id.Text);
+            cmd.Parameters.AddWithValue("@JailName", txtJail.Text);
+            DateTime a = DateTime.Now;
+            DateTime b = a.Date;
+            cmd.Parameters.AddWithValue("@JoiningDate", b);
+            SqlCommand cmd1 = new SqlCommand("select jailorID as jailorID from JailorTable where jailorID= @id", conn);
+            cmd1.Parameters.AddWithValue("@id", txt_id.Text);
             SqlDataReader dr;
             dr = cmd1.ExecuteReader();
             int count = 0;
@@ -33,20 +41,15 @@ namespace PrisonManagementSystem
                 count += 1;
             }
             dr.Close();
-            if (count >= 1)
+            if (count > 0)
             {
-                string command = "INSERT INTO AssignJailor(jailorID,JoiningDate,JailName) VALUES(@jailorID,@JoiningDate,@JailName)";
-                SqlCommand cmd = new SqlCommand(command, conn);
-                cmd.Parameters.AddWithValue("@jailorID", txt_id.Text);
-                cmd.Parameters.AddWithValue("@JailName", txtJail.Text);                
-                DateTime a = new DateTime();
-                cmd.Parameters.AddWithValue("@JoiningDate", a);
+             
                 cmd.ExecuteNonQuery();
                 lblPassRec.Text = "Jail Assigned jailor Successfully";
             }
             else
             {
-                lblPassRec.Text = "Jailor Not Found ";
+                lblPassRec.Text = "Jailor Not Found ";   
             }
         }
     }
