@@ -73,6 +73,7 @@
     <Content Include="AdminHomePage.aspx" />
     <Content Include="AssginDutytoGaurd.aspx" />
     <Content Include="AssignJailToJailor.aspx" />
+    <Content Include="AssignJailToPrisoner.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -148,6 +149,13 @@
     </Compile>
     <Compile Include="AssignJailToJailor.aspx.designer.cs">
       <DependentUpon>AssignJailToJailor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignJailToPrisoner.aspx.cs">
+      <DependentUpon>AssignJailToPrisoner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignJailToPrisoner.aspx.designer.cs">
+      <DependentUpon>AssignJailToPrisoner.aspx</DependentUpon>
     </Compile>
     <Compile Include="DeleteGaurd.aspx.cs">
       <DependentUpon>DeleteGaurd.aspx</DependentUpon>
