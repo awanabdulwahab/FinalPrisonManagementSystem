@@ -49,4 +49,32 @@
                 </div>
             </div>
      </div>
+    <div>
+    <h1>Gaurds</h1>
+        <hr />
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">All Gaurds</div>
+            <asp:GridView ID="grid_Gaurd" runat="server" AutoGenerateColumns="False" DataKeyNames="gaurdID" DataSourceID="SqlDataSource2" CssClass="Grid" CellPadding="4" Width="100%" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" ForeColor="Black" GridLines="Vertical">
+                <AlternatingRowStyle BackColor="White" />
+                <Columns>
+                    <asp:BoundField DataField="gaurdID" HeaderText="Gaurd ID" ReadOnly="True" SortExpression="gaurdID" />
+                    <asp:BoundField DataField="jailName" HeaderText="Jail Name" SortExpression="jailName" />
+                    <asp:BoundField DataField="startDate" HeaderText="Start Date" SortExpression="startDate" />
+                    <asp:BoundField DataField="endDate" HeaderText="End Date" SortExpression="endDate" />
+                </Columns>
+                <FooterStyle BackColor="#CCCC99" />
+                <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+                <RowStyle BackColor="#F7F7DE" />
+                <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#FBFBF2" />
+                <SortedAscendingHeaderStyle BackColor="#848384" />
+                <SortedDescendingCellStyle BackColor="#EAEAD3" />
+                <SortedDescendingHeaderStyle BackColor="#575357" />
+            </asp:GridView>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:PrisonManagementSystemConnectionString %>" SelectCommand="SELECT * FROM [AssignDutyToGaurd]"></asp:SqlDataSource>
+            
+        </div>
+    </div>
 </asp:Content>

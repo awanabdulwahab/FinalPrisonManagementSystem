@@ -34,4 +34,28 @@
                 </div>
             </div>
      </div>
+    <div>
+     <h1>Jailors</h1>
+        <hr />
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">All Jailors</div>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="jailorID" DataSourceID="SqlDataSource1" BackColor="#FFFFCC" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" HorizontalAlign="Center" PageSize="5" Width="100%">
+                <Columns>
+                    <asp:BoundField DataField="jailorID" HeaderText="jailorID" ReadOnly="True" SortExpression="jailorID" />
+                    <asp:BoundField DataField="JoiningDate" HeaderText="JoiningDate" SortExpression="JoiningDate" />
+                    <asp:BoundField DataField="JailName" HeaderText="JailName" SortExpression="JailName" />
+                </Columns>
+                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                <HeaderStyle BackColor="Black" BorderColor="White" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" HorizontalAlign="Center" VerticalAlign="Middle" />
+                <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                <SortedDescendingHeaderStyle BackColor="#242121" />
+            </asp:GridView>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PrisonManagementSystemConnectionString %>" SelectCommand="SELECT * FROM [AssignJailor]" OnSelecting="SqlDataSource1_Selecting"></asp:SqlDataSource>
+        </div>
+    </div>
 </asp:Content>
