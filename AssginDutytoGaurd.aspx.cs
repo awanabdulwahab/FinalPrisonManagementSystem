@@ -8,9 +8,10 @@ using System.Data.SqlClient;
 using System.Data;
 using System.IO;
 
+
 namespace PrisonManagementSystem
 {
-    public partial class AssignJailToJailor : System.Web.UI.Page
+    public partial class AssginDutytoGaurd : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(@"Data Source=ABDULWAHAB;Initial Catalog=PrisonManagementSystem;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
@@ -20,11 +21,12 @@ namespace PrisonManagementSystem
                 conn.Close();
             }
             conn.Open();
+
         }
 
         protected void btn_Assign_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd1 = new SqlCommand("select jailorID as jailorID from AssignJailor where jailorID= @id", conn);
+            SqlCommand cmd1 = new SqlCommand("select gaurdID as gaurdID from AssignDutyToGaurd where gaurdID= @id", conn);
             cmd1.Parameters.AddWithValue("@id", txt_id.Text);
             SqlDataReader dr;
             dr = cmd1.ExecuteReader();
@@ -36,24 +38,23 @@ namespace PrisonManagementSystem
             dr.Close();
             if (count >= 1)
             {
-                lblPassRec.Text = "Jailor Already has assigned A jail";
+                lblPassRec.Text = "Gaurd  Already has assigned a duty ";
             }
             else
             {
                 checkJailorAndAssign();
- 
+
             }
         }
         public void checkJailorAndAssign()
         {
-            string command = "INSERT INTO AssignJailor(jailorID,JoiningDate,JailName) VALUES(@jailorID,@JoiningDate,@JailName)";
+            string command = "INSERT INTO AssignDutyToGaurd(gaurdID,jailName,startDate,endDate) VALUES(@gaurdID,@jailName,@startDate,@endDate)";
             SqlCommand cmd = new SqlCommand(command, conn);
-            cmd.Parameters.AddWithValue("@jailorID", txt_id.Text);
-            cmd.Parameters.AddWithValue("@JailName", txtJail.Text);
-            DateTime a = DateTime.Now;
-            DateTime b = a.Date;
-            cmd.Parameters.AddWithValue("@JoiningDate", b);
-            SqlCommand cmd1 = new SqlCommand("select jailorID as jailorID from JailorTable where jailorID= @id", conn);
+            cmd.Parameters.AddWithValue("@gaurdID", txt_id.Text);
+            cmd.Parameters.AddWithValue("@jailName", txtJail.Text);
+            cmd.Parameters.AddWithValue("@startDate", Calendar1.SelectedDate.ToShortDateString());
+            cmd.Parameters.AddWithValue("@endDate", Calendar2.SelectedDate.ToShortDateString());              
+            SqlCommand cmd1 = new SqlCommand("select gaurdID as gaurdID from gaurdTable where gaurdID= @id", conn);
             cmd1.Parameters.AddWithValue("@id", txt_id.Text);
             SqlDataReader dr;
             dr = cmd1.ExecuteReader();
@@ -67,11 +68,11 @@ namespace PrisonManagementSystem
             {
 
                 cmd.ExecuteNonQuery();
-                lblPassRec.Text = "Jail Assigned jailor Successfully";
+                lblPassRec.Text = "Duty Assigned to Gaurd Successfully ";
             }
             else
             {
-                lblPassRec.Text = "Jailor Not Found ";
+                lblPassRec.Text = "Gaurd Not Found ";
             }
         }
     }
