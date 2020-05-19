@@ -99,6 +99,7 @@
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
     <Content Include="UpdateGaurd.aspx" />
+    <Content Include="UpdateJailor.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -242,6 +243,13 @@
     </Compile>
     <Compile Include="UpdateGaurd.aspx.designer.cs">
       <DependentUpon>UpdateGaurd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateJailor.aspx.cs">
+      <DependentUpon>UpdateJailor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateJailor.aspx.designer.cs">
+      <DependentUpon>UpdateJailor.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>

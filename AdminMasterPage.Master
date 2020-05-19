@@ -37,7 +37,7 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jailors<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="AddJailor.aspx">Add Jailor</a></li>
-                                    <li><a href="AddProduct.aspx">Update Jailor Information</a></li>
+                                    <li><a href="UpdateJailor.aspx">Update Jailor Information</a></li>
                                     <li><a href="AssignJailToJailor.aspx">Assign Jail to Jailor</a></li>
                                     <li><a href="DeleteJailor.aspx">Delete Jailor Account</a></li>
                                     <li><a href="AddProduct.aspx">View All Jailors</a></li>
