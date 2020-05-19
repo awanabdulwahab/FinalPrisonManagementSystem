@@ -47,7 +47,7 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gaurd<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="AddGaurd.aspx">Add Gaurd</a></li>
-                                    <li><a href="AddProduct.aspx">Update Gaurd Information</a></li>
+                                    <li><a href="UpdateGaurd.aspx">Update Gaurd Information</a></li>
                                     <li><a href="AssginDutytoGaurd.aspx">Assign Duty to Gaurd</a></li>
                                     <li><a href="DeleteGaurd.aspx">Delete a Gaurd</a></li>
                                     <li><a href="AddProduct.aspx">View All Gaurds</a></li>

@@ -98,6 +98,7 @@
     <Content Include="js\npm.js" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="UpdateGaurd.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -234,6 +235,13 @@
     </Compile>
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateGaurd.aspx.cs">
+      <DependentUpon>UpdateGaurd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateGaurd.aspx.designer.cs">
+      <DependentUpon>UpdateGaurd.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
