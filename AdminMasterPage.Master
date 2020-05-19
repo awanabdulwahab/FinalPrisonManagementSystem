@@ -57,7 +57,7 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Prisoner<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="AddPrisoner.aspx">Add Prisoner</a></li>
-                                    <li><a href="AddCategory.aspx">Update Prisoner Information</a></li>
+                                    <li><a href="UpdatePrisoner.aspx">Update Prisoner Information</a></li>
                                     <li><a href="AssignJailToPrisoner.aspx">Assign Jail to Prisoner</a></li>
                                     <li><a href="DeletePrisoner.aspx">Delete a Prisoner</a></li>
                                     <li><a href="AddSize.aspx">View All Prisoners</a></li>
