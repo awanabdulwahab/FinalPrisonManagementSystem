@@ -56,6 +56,7 @@ namespace PrisonManagementSystem
             txtAddress.Text = " ";
             txtFatherName.Text = " ";
             txtEmail.Text = " ";
+            grid_Gaurd.DataBind();
         }
     }
 }

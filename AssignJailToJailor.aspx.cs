@@ -68,6 +68,7 @@ namespace PrisonManagementSystem
 
                 cmd.ExecuteNonQuery();
                 lblPassRec.Text = "Jail Assigned jailor Successfully";
+                GridView1.DataBind();
             }
             else
             {

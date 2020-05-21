@@ -43,7 +43,7 @@ namespace PrisonManagementSystem
             else
             {
                 checkJailorAndAssign();
-
+                grid_Gaurd.DataBind();
             }
         }
         public void checkJailorAndAssign()

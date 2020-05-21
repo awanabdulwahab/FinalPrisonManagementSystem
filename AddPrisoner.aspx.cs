@@ -58,6 +58,7 @@ namespace PrisonManagementSystem
             txtAddress.Text = " ";
             txtFatherName.Text = " ";
             txtPrisonerId.Text = " ";
+            GridView1.DataBind();
         }
     }
 }

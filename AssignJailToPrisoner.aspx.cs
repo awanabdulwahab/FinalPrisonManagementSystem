@@ -41,6 +41,7 @@ namespace PrisonManagementSystem
             else
             {
                 checkJailorAndAssign();
+                GridView1.DataBind();
 
             }
         }

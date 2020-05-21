@@ -36,7 +36,6 @@
                     <asp:Label ID="Label3" runat="server" CssClass="col-md-2 control-label" Text="End Date"></asp:Label>
                     <div class="col-md-3">
                         <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
-                        
                     </div>
                 </div>
                
