@@ -5,7 +5,7 @@
         <div class="panel panel-default">
             <!-- Default panel contents -->
             <div class="panel-heading">All Jailors</div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="jailorID" DataSourceID="SqlDataSource1" BackColor="#FFFFCC" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" HorizontalAlign="Center" PageSize="5" Width="100%">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="jailorID" DataSourceID="SqlDataSource1" BackColor="#FFFFCC" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="None" HorizontalAlign="Center" PageSize="5" Width="100%">
                 <Columns>
                     <asp:BoundField DataField="jailorID" HeaderText="Jailor ID" ReadOnly="True" SortExpression="jailorID" />
                     <asp:BoundField DataField="firstName" HeaderText="Name" SortExpression="firstName" />

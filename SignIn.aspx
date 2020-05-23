@@ -61,6 +61,17 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidatorPass" CssClass="text-danger" runat="server" ErrorMessage="The Password field is Required !" ControlToValidate="txt_Password"></asp:RequiredFieldValidator>
                     </div>
                 </div>
+                 <div class="form-group">
+                    <asp:Label ID="Label4" runat="server" CssClass="col-md-2 control-label" Text="Role"></asp:Label>
+                    <div class="col-md-3">
+                        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                             <asp:ListItem >Admin</asp:ListItem>
+                             <asp:ListItem >Jailor</asp:ListItem>
+                             <asp:ListItem >Gaurd</asp:ListItem>
+                        </asp:RadioButtonList>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="text-danger" runat="server" ErrorMessage="Please Select a field!" ControlToValidate="txt_Password"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
                 <div class="form-group">
                     <div class="col-md-2"></div>
                     <div class="col-md-6">

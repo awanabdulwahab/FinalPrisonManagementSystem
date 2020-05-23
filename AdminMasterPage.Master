@@ -50,7 +50,7 @@
                                     <li><a href="UpdateGaurd.aspx">Update Gaurd Information</a></li>
                                     <li><a href="AssginDutytoGaurd.aspx">Assign Duty to Gaurd</a></li>
                                     <li><a href="DeleteGaurd.aspx">Delete a Gaurd</a></li>
-                                    <li><a href="AddProduct.aspx">View All Gaurds</a></li>
+                                    <li><a href="ViewAllGaurds.aspx">View All Gaurds</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -60,7 +60,7 @@
                                     <li><a href="UpdatePrisoner.aspx">Update Prisoner Information</a></li>
                                     <li><a href="AssignJailToPrisoner.aspx">Assign Jail to Prisoner</a></li>
                                     <li><a href="DeletePrisoner.aspx">Delete a Prisoner</a></li>
-                                    <li><a href="AddSize.aspx">View All Prisoners</a></li>
+                                    <li><a href="ViewAllPrisoner.aspx">View All Prisoners</a></li>
                                 </ul>
                             </li>
                             <li>

@@ -24,14 +24,54 @@ namespace PrisonManagementSystem
 
         protected void btn_Login_Click(object sender, EventArgs e)
         {
+
+            checkAdmin();
+
+        }
+
+        public void checkAdmin()
+        {
             string username = txt_Username.Text;
-            string password =txt_Password.Text;
-            string qry = "select * from UsersTable where username='" + username + "' and password='" + password + "'";
+            string password = txt_Password.Text;
+            string qry = "select * from AdminTable where username='" + username + "' and password='" + password + "'";
             SqlCommand cmd = new SqlCommand(qry, conn);
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
             {
                 Response.Redirect("AdminHomePage.aspx");
+            }
+            else
+            {
+                lblError.Text = "Username & Password Is not correct Try again..!!";
+            }
+        }
+        public void checkJailor()
+        {
+            string id = txt_Username.Text;
+            string password = txt_Password.Text;
+            string qry = "select * from JailorTable where jailorID='" + id + "' and password='" + password + "'";
+            SqlCommand cmd = new SqlCommand(qry, conn);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            if (sdr.Read())
+            {
+                Response.Redirect("JailorMainPage.aspx");
+            }
+            else
+            {
+                lblError.Text = "Username & Password Is not correct Try again..!!";
+            }
+        }
+
+        public void checkGaurd()
+        {
+            string id = txt_Username.Text;
+            string password = txt_Password.Text;
+            string qry = "select * from gaurdTable where gaurdID='" + id + "' and password='" + password + "'";
+            SqlCommand cmd = new SqlCommand(qry, conn);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            if (sdr.Read())
+            {
+                Response.Redirect("GaurdHomePage.aspx");
             }
             else
             {

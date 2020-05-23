@@ -101,7 +101,9 @@
     <Content Include="UpdateGaurd.aspx" />
     <Content Include="UpdateJailor.aspx" />
     <Content Include="UpdatePrisoner.aspx" />
+    <Content Include="ViewAllGaurds.aspx" />
     <Content Include="ViewAllJailor.aspx" />
+    <Content Include="ViewAllPrisoner.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -267,12 +269,26 @@
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
     </Compile>
+    <Compile Include="ViewAllGaurds.aspx.cs">
+      <DependentUpon>ViewAllGaurds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAllGaurds.aspx.designer.cs">
+      <DependentUpon>ViewAllGaurds.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewAllJailor.aspx.cs">
       <DependentUpon>ViewAllJailor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewAllJailor.aspx.designer.cs">
       <DependentUpon>ViewAllJailor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllPrisoner.aspx.cs">
+      <DependentUpon>ViewAllPrisoner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAllPrisoner.aspx.designer.cs">
+      <DependentUpon>ViewAllPrisoner.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
