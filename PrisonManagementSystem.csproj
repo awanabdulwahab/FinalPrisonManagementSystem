@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddAdmin.aspx" />
     <Content Include="AddGaurd.aspx" />
     <Content Include="AddJailor.aspx" />
     <Content Include="AddPrisoner.aspx" />
@@ -107,6 +108,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAdmin.aspx.cs">
+      <DependentUpon>AddAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAdmin.aspx.designer.cs">
+      <DependentUpon>AddAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddGaurd.aspx.cs">
       <DependentUpon>AddGaurd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
