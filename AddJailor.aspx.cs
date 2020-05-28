@@ -24,7 +24,7 @@ namespace PrisonManagementSystem
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
-            string command = "INSERT INTO jailorTable(jailorID,firstName,fathername,email,gender,address,age) VALUES(@jailorID,@firstName,@fathername,@email,@gender,@address,@age)";
+            string command = "INSERT INTO jailorTable(jailorID,firstName,fathername,email,gender,address,age,password) VALUES(@jailorID,@firstName,@fathername,@email,@gender,@address,@age,@password)";
             SqlCommand cmd = new SqlCommand(command, conn);
             cmd.Parameters.AddWithValue("@jailorID", txtJailorId.Text);
             cmd.Parameters.AddWithValue("@firstname", txtFirstName.Text);
@@ -32,6 +32,7 @@ namespace PrisonManagementSystem
             cmd.Parameters.AddWithValue("@email", txtEmail.Text);
             cmd.Parameters.AddWithValue("@address", txtAddress.Text);
             cmd.Parameters.AddWithValue("@age", txt_age.Text);
+            cmd.Parameters.AddWithValue("@password", txtpassword.Text);
             cmd.Parameters.AddWithValue("gender", RadioButtonList1.SelectedItem.Text);
             SqlCommand cmd1 = new SqlCommand("select jailorID as jailorID from JailorTable where jailorID='" + txtJailorId.Text + "'", conn);
             SqlDataReader dr;
