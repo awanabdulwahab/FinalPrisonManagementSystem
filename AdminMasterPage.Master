@@ -36,7 +36,7 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="AddAdmin.aspx">Add Admin</a></li>
-                                    <li><a href="UpdateJailor.aspx">Update Admin Information</a></li>
+                                    <li><a href="UpdateAdmin.aspx">Update Admin Information</a></li>
                                     <li><a href="DeleteJailor.aspx">Delete Admin Account</a></li>
                                     <li><a href="ViewAllJailor.aspx">View All Admins</a></li>
                                 </ul>
