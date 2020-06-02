@@ -25,7 +25,18 @@ namespace PrisonManagementSystem
         protected void btn_Login_Click(object sender, EventArgs e)
         {
 
-            checkAdmin();
+           if (radiobuttonlist.SelectedItem.Text =="Admin")
+            {
+                checkAdmin();
+            }
+           else if(radiobuttonlist.SelectedItem.Text == "Jailor")
+            {
+                checkJailor();
+            }
+           else if (radiobuttonlist.SelectedItem.Text =="Gaurd")
+            {
+                checkGaurd();
+            }
 
         }
 
@@ -33,7 +44,7 @@ namespace PrisonManagementSystem
         {
             string username = txt_Username.Text;
             string password = txt_Password.Text;
-            string qry = "select * from AdminTable where username='" + username + "' and password='" + password + "'";
+            string qry = "select * from AdminTable where adminID='" + username + "' and password='" + password + "'";
             SqlCommand cmd = new SqlCommand(qry, conn);
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())

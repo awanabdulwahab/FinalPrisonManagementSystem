@@ -34,7 +34,6 @@
                             <li><a href="HomePage.aspx">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li id="btnSignup" runat="server"><a href="SignUp.aspx">Sign Up</a></li>
                             <li class="active"><a href="SignIn.aspx">Sign In</a></li>
                         </ul>
                     </div>
@@ -64,7 +63,7 @@
                  <div class="form-group">
                     <asp:Label ID="Label4" runat="server" CssClass="col-md-2 control-label" Text="Role"></asp:Label>
                     <div class="col-md-3">
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                        <asp:RadioButtonList ID="radiobuttonlist" runat="server">
                              <asp:ListItem >Admin</asp:ListItem>
                              <asp:ListItem >Jailor</asp:ListItem>
                              <asp:ListItem >Gaurd</asp:ListItem>
@@ -111,7 +110,7 @@
     <footer>
         <div class="container">
             <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2020 AbdulWahab &middot; <a href="HomePage.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="SignIn.aspx">SignIn</a>&middot; <a href="SignUp.aspx">SignUp</a></p>
+            <p>&copy; 2020 AbdulWahab &middot; <a href="HomePage.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="SignIn.aspx">SignIn</a></p>
         </div>
     </footer>
 
