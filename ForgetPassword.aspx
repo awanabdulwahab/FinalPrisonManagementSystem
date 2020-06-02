@@ -29,8 +29,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="HomePage.aspx">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="SignUp.aspx">Sign up</a></li>
+                            <li><a href="Contact.aspx">Contact</a></li>
                             <li><a href="SignIn.aspx">Sign In</a></li>
                             
                         </ul>
@@ -70,7 +69,7 @@
     <footer>
         <div class="container">
             <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2020 AbdulWahab &middot; <a href="HomePage.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="Login.aspx">SignIn</a>&middot; <a href="SignUp.aspx">SignUp</a></p>
+            <p>&copy; 2020 AbdulWahab &middot; <a href="HomePage.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="Contact.aspx">Contact</a> &middot; <a href="Login.aspx">SignIn</a>&middot; <a href="SignUp.aspx">SignUp</a></p>
         </div>
     </footer>
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EvnetLog.aspx.cs" Inherits="PrisonManagementSystem.EvnetLog" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EventLog.aspx.cs" Inherits="PrisonManagementSystem.EvnetLog" %>
 
 <!DOCTYPE html>
 

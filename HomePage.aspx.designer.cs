@@ -24,15 +24,6 @@ namespace PrisonManagementSystem
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// btnSignup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl btnSignup;
-
-        /// <summary>
         /// btnSignin control.
         /// </summary>
         /// <remarks>
