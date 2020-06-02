@@ -83,6 +83,7 @@
     <Content Include="DeleteGaurd.aspx" />
     <Content Include="DeleteJailor.aspx" />
     <Content Include="DeletePrisoner.aspx" />
+    <Content Include="EvnetLog.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="ForgetPassword.aspx" />
     <Content Include="GaurdHomePage.aspx" />
@@ -192,6 +193,13 @@
     </Compile>
     <Compile Include="DeletePrisoner.aspx.designer.cs">
       <DependentUpon>DeletePrisoner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EvnetLog.aspx.cs">
+      <DependentUpon>EvnetLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EvnetLog.aspx.designer.cs">
+      <DependentUpon>EvnetLog.aspx</DependentUpon>
     </Compile>
     <Compile Include="ForgetPassword.aspx.cs">
       <DependentUpon>ForgetPassword.aspx</DependentUpon>
