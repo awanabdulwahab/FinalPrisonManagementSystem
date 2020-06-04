@@ -24,7 +24,6 @@ namespace PrisonManagementSystem
                 client.EnableSsl = true;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("awanabdulwahab7@gmail.com", "13Air143#");
                 MailMessage msgobj = new MailMessage();
                 msgobj.To.Add("awanabdulwahab7@gmail.com");
                 msgobj.From = new MailAddress(txtTo.Text);
